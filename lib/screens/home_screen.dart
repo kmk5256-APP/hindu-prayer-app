@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          theSliverPadding(
+          SliverPadding(
             padding: const EdgeInsets.all(16),
             sliver: SliverGrid(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -150,11 +150,6 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-// Helper to avoid typo issues
-Widget theSliverPadding({required EdgeInsets padding, required Widget sliver}) {
-  return SliverPadding(padding: padding, sliver: sliver);
 }
 
 class _HomeCard extends StatelessWidget {
