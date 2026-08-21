@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
+
 class Deity {
   final String id;
   final String name;
   final String sanskritName;
   final String description;
-  final String icon; // emoji or icon name for simplicity
+  final String icon; // emoji for simplicity
   final Color color;
   final List<String> mantraIds;
   final String aarti;
@@ -18,10 +20,4 @@ class Deity {
     required this.mantraIds,
     this.aarti = '',
   });
-}
-
-// Simple Color class for data (to avoid importing material in data)
-class Color {
-  final int value;
-  const Color(this.value);
 }
